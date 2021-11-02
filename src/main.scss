@@ -12,7 +12,7 @@ $font-family: 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
 
 body {
   color: #333;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.5;
   font-family: $font-family;
   -webkit-font-smoothing: antialiased;
@@ -54,7 +54,7 @@ a {
   left: 50%;
   color: #bbb;
   margin-left: -500px;
-  font-size: 12px;
+  font-size: 14px;
   text-align: right;
   @media screen and (max-width: 1024px) {
     display: none;
@@ -80,7 +80,7 @@ a {
 
 .content-hd {
   width: 100%;
-  padding: 30px 50px;
+  padding: 10px 50px;
   color: #fff;
   background-color: $color-green;
   overflow: hidden;
@@ -227,7 +227,15 @@ a {
   }
 
   // .content-left,
+  .content-left,
+  .content-right {
+    width: 50%;
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
+  }
   .content-center {
+    clear: both;
     width: 100%;
     @media screen and (max-width: 1024px) {
       width: 100%;
@@ -250,7 +258,7 @@ a {
   .section-hd {
     position: relative;
     height: 32px;
-    margin: 10px auto 5px;
+    margin: 5px auto 5px;
     overflow: hidden;
   }
 
